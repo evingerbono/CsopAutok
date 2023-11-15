@@ -6,7 +6,7 @@ Ahol bérelni tudunk különböző tipusú autókat(sportAuto, terepjaro).
 Packege: 
   - Main: CsopAutok
   - Model:
-        - Auto(abs. ős osztály)
+        <br>- Auto(abs. ős osztály)
         - Kolcsonzo
         - Terepjaro
         - SportAuto
