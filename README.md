@@ -7,9 +7,9 @@ Packege:
   - Main: CsopAutok
   - Model:
         <br>- Auto(abs. ős osztály)
-        - Kolcsonzo
-        - Terepjaro
-        - SportAuto
+        <br>- Kolcsonzo
+        <br>- Terepjaro
+        <br>- SportAuto
 
 
 | Készítette  | Feladat |
