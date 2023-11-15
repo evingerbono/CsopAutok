@@ -1,7 +1,16 @@
 # CsopAutok
 
 A programunk auto kölcsönzéssel fog foglalkozni.
-Ahol bérelni tudunk különböző tipusú autókat(sport, terep, városi, limuzin).
+Ahol bérelni tudunk különböző tipusú autókat(sportAuto, terepjaro).
+
+Packege: 
+  - Main: CsopAutok
+  - Model:
+        - Auto(abs. ős osztály)
+        - Kolcsonzo
+        - Terepjaro
+        - SportAuto
+
 
 | Készítette  | Feladat |
 | ------------- | ------------- |
