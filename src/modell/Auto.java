@@ -24,8 +24,8 @@ public abstract class Auto {
         this.benzin = benzin;
     }
     
-    
-    public void Auot(){
-    
+    public void megy(double kilometer){
+        this.kilometer = kilometer;
     }
+   
 }
