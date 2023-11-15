@@ -10,10 +10,12 @@ Packege:
         <br>- Kolcsonzo
         <br>- Terepjaro
         <br>- SportAuto
- <br>*Funkciók:
+<br>*Funkciók:
     - Ha kivesznek egy autot azt lehet használni majd visszahozni.
     - Ha használják nő a kilóméter.
     - Sport autó több benzint használ km-ként(+30%), mint a másik.
+    - A terepjáró be tud koszosodni ha offroad megy.
+    - A sport autó ha versenyzik 30% eséllyel összetörik.
   
 
 
