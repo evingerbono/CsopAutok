@@ -1,5 +1,9 @@
 package modell;
 
-public class Kolcsonzo {
-    
+public class Kolcsonzo
+{
+    public Kolcsonzo()
+    {
+        
+    }
 }
