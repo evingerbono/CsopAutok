@@ -16,16 +16,23 @@ public class CsopAutok {
         
         
         sportAuto.versenyzik();
-        sportAuto.javitas();
+        
         sportAuto.megy(700);
+        sportAuto.javitas();
+        sportAuto.megy(30);
         
-        
+        terepjaro.offroad();
         terepjaro.megy(100);
         
+                
         System.out.println("");
         sportAuto.visszahoz();
 
         terepjaro.visszahoz();
+        
+        terepjaro.lemos();
+        terepjaro.visszahoz();
+        
 
     }
 

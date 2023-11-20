@@ -15,22 +15,25 @@ public class SportAuto extends Auto {
 
     @Override
     public void megy(double kilometer) {
-        super.megy(kilometer);
-
-        if (this.versenyzik && !osszetort) {
+        if (this.versenyzik) {
+            super.megy(10); //Ha versenyzik az autó alapértelmezetten 10km-t megy(anyi egy futam)!
             if (Math.random() < 0.3) {
                 osszetort = true;
                 szervizben = true;
                 System.out.println("\nA sportautó összetört a verseny során!");
                 System.out.println("Az autó szervizbe került. Javítasd meg!\n");
+                this.versenyzik = false;
             } else {
-                if (osszetort == true && versenyzik == false) {
-                    System.out.println("Javítsd meg a kocsid a versenyzés előtt!");
-                } else {
-                    System.out.println("\nMegusztad, nem tört össze az autód a verseny során!\n");
-                }
-
+                System.out.println("\nMegusztad, nem tört össze az autód a verseny során!\n");
+                this.versenyzik = false;
             }
+        } else {
+            if (osszetort == true) {
+                System.out.println("Javítsd meg a kocsid mert összetört!");
+            } else {
+                super.megy(kilometer);
+            }
+
         }
     }
 
@@ -42,9 +45,9 @@ public class SportAuto extends Auto {
         if (szervizben && osszetort) {
             szervizben = false;
             osszetort = false;
-            System.out.println("Az autó sikeresen megjavítva. Most már újra használhatod!");
+            System.out.println("\tAz autó sikeresen megjavítva. Most már újra használhatod!\n");
         } else {
-            System.out.println("Az autó nem szorul javításra");
+            System.out.println("\tAz autó nem szorul javításra\n");
         }
     }
 
@@ -52,7 +55,9 @@ public class SportAuto extends Auto {
         if (this.osszetort) {
             return this.versenyzik = false;
         } else {
+            System.out.println("A Sport autód versenyen vesz részt!");
             return this.versenyzik = true;
+
         }
 
     }

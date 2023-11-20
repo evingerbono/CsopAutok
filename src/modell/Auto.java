@@ -50,7 +50,7 @@ public abstract class Auto {
     }
 
     public void tankol() {
-        this.benzin = 70;
+        this.benzin = 70; //Max 70(l)-es a tank, ha tankol alapértelmezetten mindig tele tölti.
         System.out.println(this.nev +": "+"Az autot megtankoltad!");
     }
     

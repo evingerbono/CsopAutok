@@ -17,7 +17,8 @@ public class Terepjaro extends Auto {
             super.megy(kilometer);
             if (this.offroad) {
                 this.koszos = true;
-                System.out.println("A terepjáró koszos lett offroad miatt.");
+                System.out.println("\n\tA terepjáró koszos lett offroad miatt.");
+                this.offroad = false;
             }
     }
 
@@ -28,9 +29,9 @@ public class Terepjaro extends Auto {
     public void lemos() {
         if (koszos) {
             koszos = false;
-            System.out.println("A terepjáró le lett mosva.");
+            System.out.println("\n\tA terepjáró le lett mosva.");
         } else {
-            System.out.println("A terepjáró tiszta, nincs szükség lemosásra.");
+            System.out.println("\n\tA terepjáró tiszta, nincs szükség lemosásra.");
         }
     }
 
@@ -43,7 +44,7 @@ public class Terepjaro extends Auto {
         }
     }
 
-    private boolean offroad() {
+    public boolean offroad() {
         return this.offroad = true;
     }
 }
