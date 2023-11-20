@@ -43,7 +43,7 @@ public abstract class Auto {
         } else {
             this.kilometer += kilometer;
             this.benzin -= (fogyasztas / 100) * kilometer;
-            System.out.println(this.nev +": "+"\n\tEnnyi km-t ment az auto: "+this.kilometer + "\n\tEnnyi l benzined maradt még: "+this.benzin);
+            System.out.println(this.nev +": "+"\n\tKm óra állása: "+this.kilometer + "\n\tEnnyi l benzined maradt még: "+this.benzin);
         }
         }
         else{System.out.println(this.nev +": "+"\n\tNincs még használatban, kölcsönözd ki!");}

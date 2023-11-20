@@ -20,7 +20,7 @@ public class CsopAutok {
         sportAuto.megy(700);
         sportAuto.javitas();
         sportAuto.megy(30);
-        
+        sportAuto.megy(30);
         terepjaro.offroad();
         terepjaro.megy(100);
         
