@@ -26,6 +26,6 @@ public class Sportauto extends Auto
     @Override public void megy(double kilometert)
     {
         super.megy(kilometert);
-        benzin -= 10 * kilometert * 1.3;
+        setBenzin(getBenzin() - 0.1 * kilometert * 1.3);
     }
 }

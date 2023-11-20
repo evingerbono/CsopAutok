@@ -15,14 +15,19 @@ public class Terepjaro extends Auto
         return koszos;
     }
     
+    public void setKoszos(boolean koszos)
+    {
+        this.koszos = koszos;
+    }
+    
     public void offroadMegy()
     {
-        koszos = true;
+        setKoszos(true);
     }
 
     @Override public void megy(double kilometert)
     {
         super.megy(kilometert);
-        benzin -= 10 * kilometert;
+        setBenzin(getBenzin() - 0.1 * kilometert);
     }
 }

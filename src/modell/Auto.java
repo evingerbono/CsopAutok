@@ -3,7 +3,7 @@ package modell;
 public abstract class Auto
 {
     private double kilometer;
-    protected double benzin;
+    private double benzin;
     
     public Auto(double benzin)
     {
@@ -19,6 +19,11 @@ public abstract class Auto
     public double getBenzin()
     {
         return benzin;
+    }
+    
+    public void setBenzin(double benzin)
+    {
+        this.benzin = benzin;
     }
     
     public void megy(double kilometert)
