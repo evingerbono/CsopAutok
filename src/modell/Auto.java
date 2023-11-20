@@ -2,6 +2,7 @@ package modell;
 
 public abstract class Auto {
     int benzin,kilometer;
+    boolean hasznal;
     
     public Auto(int benzin,int kilometer){
         this.benzin=benzin;
@@ -18,5 +19,11 @@ public abstract class Auto {
     }
      public void setKilometer(int kilometer){
         this.kilometer=kilometer;
+    }
+    
+    public void hasznal(int km) {
+        if (!hasznal) return;
+        this.kilometer += km;
+        this.benzin -= km / 10;
     }
 }
